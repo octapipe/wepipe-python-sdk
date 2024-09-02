@@ -1,0 +1,4 @@
+venv
+wepipe_python_sdk/.env
+.idea
+test.py
