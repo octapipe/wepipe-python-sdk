@@ -29,7 +29,7 @@ class CardModel(BaseModel):
     tags: List[str] = Field(default=None, alias='tags')
     user: Optional[UserModel] = Field(default=None, alias='user')
     tasks: Optional[List['TaskModel']] = Field(default=None, alias='tasks')
-    contacts: Optional[List[ContactModel]] = Field(default=None, alias='contacts')
+    contacts: Optional[Union[List[ContactModel], list[int]]] = Field(default=None, alias='contacts')
     companies: Optional[List[CompanyModel]] = Field(default=None, alias='companies')
     products: Optional[List[ProductModel]] = Field(default=None, alias='products')
     deals: Optional[List[CardModel]] = Field(default=None, alias='deals')
