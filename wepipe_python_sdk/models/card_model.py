@@ -1,6 +1,6 @@
 from __future__ import annotations
 from pydantic import BaseModel, Field
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Union
 from .user_model import UserModel
 from .contact_model import ContactModel
 from .company_model import CompanyModel
