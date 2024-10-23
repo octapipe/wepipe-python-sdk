@@ -18,7 +18,7 @@ class CardModel(BaseModel):
     user_id: int = Field(default=None, alias='user_id')
     lost_reason: Optional[str] = Field(default=None, alias='lost_reason')
     currency: str = Field(default=None, alias='currency')
-    amount: str = Field(default=None, alias='amount')
+    amount: Optional[str] = Field(default=None, alias='amount')
     custom_fields: Optional[List[Dict[str, Any]]] = Field(default=None, alias='custom_fields')
     last_stage_updated_at: str = Field(default=None, alias='last_stage_updated_at')
     created_at: str = Field(default=None, alias='created_at')
